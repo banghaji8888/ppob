@@ -1,0 +1,19 @@
+{
+  "name": "ppob_biller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=2018 pm2 start src/index.js --watch",
+    "stop": "pm2 stop 0 --watch"
+  },
+  "keywords": [],
+  "author": "Bang Haji",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
