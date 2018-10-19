@@ -23,7 +23,7 @@ exports.price = function(req,res){
     }
 }
 
-exports.topup = function(req,res){
+exports.general = function(req,res){
     try{
         sender.post(string.getRajabillerUrl(),req.body,function(response){
             try{

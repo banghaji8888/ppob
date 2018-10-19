@@ -1,7 +1,7 @@
 {
-  "name": "ppob_biller",
+  "name": "biller",
   "version": "1.0.0",
-  "description": "",
+  "description": "Biller PPOB",
   "main": "index.js",
   "scripts": {
     "start": "PORT=2018 pm2 start src/index.js --watch",
