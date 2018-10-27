@@ -1,0 +1,7 @@
+#!/bin/bash
+currdirr=`pwd`
+cd $currdirr/core
+npm stop
+cd $currdirr/biller
+npm stop
+cd $currdirr

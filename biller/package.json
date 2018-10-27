@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "PORT=2018 pm2 start src/index.js --watch",
-    "stop": "pm2 stop 0 --watch"
+    "stop": "pm2 stop index --watch"
   },
   "keywords": [],
   "author": "Bang Haji",
