@@ -9,7 +9,8 @@ global.string = require('./utils/string')
 global.sender = require('./utils/sender')
 global.helper = require('./utils/helper')
 global.request = require('request')
-var credential = require('./credential/user_auth')
+var midUserAuth = require('./middleware/user_auth')
+var midCheckSaldo = require("./middleware/check_saldo")
 
 app.use(bodyParser.json())
 app.use(function(err,req,res,next){
@@ -17,7 +18,8 @@ app.use(function(err,req,res,next){
     res.sendStatus(500)
 })
 
-app.use(credential.userAuth)
+app.use(midUserAuth.userAuth)
+app.use(midCheckSaldo.checkSaldo)
 
 require('./router')(app)
 

@@ -1,13 +1,14 @@
 'use strict'
 
-var rajabillerUrl = "https://202.43.173.234/transaksi/json_devel.php"
+var biller = "http://biller.bayarinaja.com"
 
 var RD = {
     success: "Success",
     failed: "Failed",
     general_error: "General error",
     not_found: "Not Found",
-    credential_not_matching: "Username dan password tidak cocok"
+    credential_not_matching: "Username dan password tidak cocok",
+    empty_saldo: "Saldo tidak mencukupi untuk transaki ini"
 }
 
 exports.response = function(rc,rd){
